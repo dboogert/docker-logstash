@@ -20,7 +20,11 @@ RUN /opt/logstash/bin/plugin install contrib
 
 # Copy build files to container root
 RUN mkdir /app
-ADD . /app
+RUN mkdir /app/bin
+ADD bin/boot /app/bin/
+
+ADD opt/logstash.conf /opt/
+
 
 # Elasticsearch HTTP
 EXPOSE 9200
