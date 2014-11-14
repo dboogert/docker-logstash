@@ -1,5 +1,5 @@
 NAME = dboogert/docker-logstash
-VERSION = 0.8.2
+VERSION = 0.8.4
 
 # Set the LOGSTASH_CONFIG_URL env var to your logstash.conf file.
 # We will use our basic config if the value is empty.
